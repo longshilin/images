@@ -92,7 +92,7 @@
         for (let file of data.filter(filterFiles(filter)).sort(sortFiles(filter))) {
           const fileName = file.path;
           const fileDisplayName = fileName.split('-').join(' ');
-          htmlString += `<li><a href="${fileName}">${fileDisplayName}</a><img src="${fileName}"></li>`;
+          htmlString += `<li><a href="${fileName}">${fileDisplayName}</a><br><img src="${fileName}"></li>`;
         }
         document.getElementById('list').innerHTML = htmlString;
       }
